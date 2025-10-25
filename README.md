@@ -1,2 +1,3 @@
 # super-lamp-
-This is my first github rrepo
+This is my first github repo
+Author :- Kumar Shiwesh
