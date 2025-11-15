@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector </title>
+    <style>
+       #main .odd{
+            color :blue;
+        }
+        #main-p {
+           background-color:brown;
+      }
+      a:link {
+        text-decoration: none; font-size:20px;
+      }
+      a:hover {
+        color: beige; font-size : 25px ;
+      }
+        a:active{
+            color:cornflowerblue;   
+        }
+        #main p:nth-child(even){
+            color: blueviolet;
+        }
+        #main p::first-letter{
+            color: brown;font-size :30px ;
+        }   
+        #main p ::first-line{
+            background-color: blanchedalmond;
+        }
+        #main p::after{
+            content :"read more";
+            color: yellowgreen;
+            font-size:40px;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <!-- CSS comutators  -->
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div> 
+    <div id = "main">
+        <p class = "odd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <p class = "odd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+       
+
+
+    </div>
+    <div id = "main-p"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+    
+
+<a href = ""> Visit my page </a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+</body>
+</html> 
