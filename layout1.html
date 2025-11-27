@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-1 </title>
+    <style>
+
+        main{
+            display:flex;
+            gap:5px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 350px;
+            margin: 20px auto;
+            border: 5px solid ;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box{
+            border:1px solid;
+            padding: 20px;
+            text-align:center;
+        }
+
+        .row{
+            display:flex;
+        }
+
+        .row.box{
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <main></main>
+    <div class="container">
+
+        <div class ="box">Header</div>
+
+        <div class="row">
+            <div class="box">box 1 </div>
+             <div class="box">box 1 </div>
+        </div>
+
+        <div class="row">center</div>
+
+        <div class="row">
+             <div class="box">left </div>
+              <div class="box">right </div>
+        </div>
+        <div class="box">footer</div>
+    </div>
+    </main>
+</body>
+</html>
